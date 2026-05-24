@@ -121,11 +121,18 @@ header button:hover{
     border-radius:20px;
     transition:0.3s;
     border:1px solid #334155;
+    overflow:hidden;
 }
 
 .card:hover{
     transform:translateY(-10px);
     border-color:#38bdf8;
+}
+
+.card img{
+    width:70px;
+    height:70px;
+    margin-bottom:20px;
 }
 
 .card h2{
