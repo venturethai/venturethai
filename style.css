@@ -164,6 +164,23 @@ header button:hover{
     font-size:14px;
 }
 
+.investBtn{
+    margin-top:25px;
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#38bdf8;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.investBtn:hover{
+    background:#0ea5e9;
+}
+
 /* DARK MODE */
 
 .dark{
