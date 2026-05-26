@@ -46,7 +46,6 @@ nav a{
     text-decoration:none;
     color:white;
     transition:0.3s;
-    font-size:17px;
 }
 
 nav a:hover{
@@ -58,7 +57,6 @@ nav a:hover{
     border:none;
     border-radius:10px;
     cursor:pointer;
-    font-size:18px;
 }
 
 /* HERO */
@@ -79,7 +77,7 @@ header{
 }
 
 .heroText h1{
-    font-size:85px;
+    font-size:80px;
     max-width:1000px;
     line-height:1.1;
 }
@@ -88,10 +86,22 @@ header{
     margin-top:30px;
     font-size:24px;
     color:#cbd5e1;
+    max-width:800px;
+}
+
+#searchBar{
+    margin-top:30px;
+    width:500px;
+    max-width:90%;
+    padding:18px;
+    border:none;
+    border-radius:14px;
+    font-size:16px;
+    outline:none;
 }
 
 .heroText button{
-    margin-top:35px;
+    margin-top:30px;
     padding:18px 40px;
     border:none;
     border-radius:14px;
@@ -106,18 +116,6 @@ header{
 .heroText button:hover{
     transform:scale(1.05);
     background:#0ea5e9;
-    box-shadow:0 0 30px rgba(56,189,248,0.4);
-}
-
-#searchBar{
-    margin-top:30px;
-    width:500px;
-    max-width:90%;
-    padding:18px;
-    border:none;
-    border-radius:14px;
-    font-size:16px;
-    outline:none;
 }
 
 /* STATS */
@@ -127,13 +125,13 @@ header{
     justify-content:center;
     gap:40px;
     flex-wrap:wrap;
-    padding:80px 20px;
+    padding:100px 20px;
 }
 
 .statBox{
     width:250px;
-    padding:40px;
     background:#1e293b;
+    padding:40px;
     border-radius:20px;
     text-align:center;
     border:1px solid #334155;
@@ -146,8 +144,8 @@ header{
 }
 
 .statBox h1{
-    font-size:50px;
     color:#38bdf8;
+    font-size:50px;
 }
 
 .statBox p{
@@ -179,7 +177,7 @@ header{
 }
 
 .card:hover{
-    transform:translateY(-15px) scale(1.03);
+    transform:translateY(-15px);
     border-color:#38bdf8;
     box-shadow:0 0 35px rgba(56,189,248,0.25);
 }
@@ -216,7 +214,6 @@ header{
     background:#0f172a;
     padding:12px;
     border-radius:10px;
-    font-size:14px;
 }
 
 .investBtn{
@@ -234,7 +231,6 @@ header{
 
 .investBtn:hover{
     background:#0ea5e9;
-    transform:scale(1.03);
 }
 
 /* INFO */
@@ -299,12 +295,6 @@ form button{
     font-size:18px;
     font-weight:bold;
     cursor:pointer;
-    transition:0.3s;
-}
-
-form button:hover{
-    background:#0ea5e9;
-    transform:scale(1.03);
 }
 
 /* FOOTER */
@@ -337,8 +327,6 @@ footer{
     border-radius:20px;
     width:420px;
     max-width:90%;
-
-    animation:fadeUp 0.4s ease;
 }
 
 .modalContent h1{
@@ -370,6 +358,7 @@ footer{
 /* ANIMATION */
 
 @keyframes fadeUp{
+
     from{
         opacity:0;
         transform:translateY(40px);
@@ -379,6 +368,7 @@ footer{
         opacity:1;
         transform:translateY(0);
     }
+
 }
 
 /* RESPONSIVE */
@@ -386,7 +376,7 @@ footer{
 @media(max-width:900px){
 
     .heroText h1{
-        font-size:55px;
+        font-size:50px;
     }
 
     nav{
@@ -401,28 +391,5 @@ footer{
     .contactSection h1{
         font-size:40px;
     }
-}
 
-/* DARK MODE */
-
-.dark{
-    background:white;
-    color:black;
-}
-
-.dark nav{
-    background:rgba(255,255,255,0.95);
-}
-
-.dark .card,
-.dark .statBox,
-.dark .modalContent{
-    background:white;
-    color:black;
-}
-
-.dark .card p,
-.dark .infoSection p,
-.dark footer{
-    color:#444;
 }
